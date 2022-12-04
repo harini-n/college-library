@@ -1,0 +1,252 @@
+<html>
+
+<head>
+    <title>Books Available!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<style>
+    div {
+        color: black;
+        text-align: center;
+    }
+    
+    img {
+        height: 200px;
+        width: 300px;
+        padding-bottom: 20px;
+    }
+    
+    button {
+        margin-top: 10px;
+    }
+    
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background: -webkit-linear-gradient(left, #1e2021, #21272d, #1b1c1d, #525355);
+    }
+    
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            color: green;
+        }
+    }
+    
+    .col:hover {
+        background-image: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGlicmFyeXxlbnwwfHwwfHw%3D&w=1000&q=80");
+    }
+</style>
+
+<body>
+    <div class="container fluid">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h2 class="display-6" style="font-weight:bold;color:white;"><br>COLLEGE LIBRARY</h2>
+            </div>
+
+        </div><br>
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0bgh4ukrSMYe08jPrj6hh5j1IgbnKu_R_bg&usqp=CAU" class="img rounded">
+                    <div class="caption">
+                        <p><b>Engineering Mathematics</b></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:50px;font-weight:bold;" name="No of Books Available:" value="100"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Engineering Mathematics">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Engineering Mathematics"></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1573315971i/48739935.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>English for Engineers</b><br></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:55px; font-weight:bold;" name="No of books Available:" value="110"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="English for Engineers">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="English for Engineers"></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://booksparadise.in/storage/2021/05/Engineering-Physics-B-K-Pandey-S-Chaturvedi.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Engineering Physics</b><br></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:55px; font-weight:bold;" name="No of Books Available: " value="111"><del><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Engineering Physics">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Engineering Physics"></button></form>
+            </div>
+        </div><br>
+
+    </div>
+    <div class="container fluid" style="background-color:-webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);"><br>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://kbazar.s3.amazonaws.com/__sized__/products/IMG_20200930_155627_1-thumbnail-540x540-70.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Theory of Machines</b></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:50px;font-weight:bold;" name="No of Books Available:" value="65"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Theory of Machines">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Theory of Machines"></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://m.media-amazon.com/images/I/71I0RBKe3cL.jpg" class="img rounded">
+                    <div class="caption">
+                        <p>Electrical Power Systems<br></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:55px; font-weight:bold;" name="No of Books Available:" value="50"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Electrical Power Systems">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Electrical Power Systems"></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://m.media-amazon.com/images/I/61UlXacsp9L.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Measurements and Instrumentation</b><br></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:55px; font-weight:bold;" name="No of Books Available:" value="61"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Measurements and Instrumentation">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Measurements and Instrumentation"></button></form>
+            </div>
+        </div><br>
+
+    </div>
+    <div class="container fluid" style="background-color:-webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);"><br>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://m.media-amazon.com/images/I/91zPPwURKUL.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Database Management Systems</b></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:50px;font-weight:bold;" name="No of Books Available:" value="65"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Database Management Systems">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Database Management Systems"></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://m.media-amazon.com/images/I/711Z2XWDsqL.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Software Engineering </b><br></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:55px; font-weight:bold;" name="No of Books Available:" value="64"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Software Engineering">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Software Engineering"></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://m.media-amazon.com/images/I/81Oru++aySL.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Web Programming</b><br></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:55px; font-weight:bold;" name="No of Books Available:" value="60"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Web Programming">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Web Programming"></button></form>
+            </div>
+        </div><br>
+
+    </div>
+    <div class="container fluid" style="background-color:-webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);"><br>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://m.media-amazon.com/images/I/816fphghgwL.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Analog Electronics</b></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:50px;font-weight:bold;" name="No of Books Available:" value="63"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Analog Electronics">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Analog Electronics"></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://lalchowk.in/lalchowk/pictures/1000200-1.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Digital Logic and Computer Design</b><br></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:55px; font-weight:bold;" name="No of Books Available:" value="57"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Digital Logic and Computer Design">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Digital Logic and Computer Design"></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://m.media-amazon.com/images/I/71IxEs6rJmL.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Microprocessor and Microcontroller</b><br></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:55px; font-weight:bold;" name="No of Books Available:" value="60"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Microprocessor and Microcontroller">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Microprocessor and Microcontroller"></button></form>
+            </div>
+        </div><br>
+
+    </div>
+    <div class="container fluid" style="background-color:-webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);"><br>
+
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/3/3a/Wings_of_Fire_by_A_P_J_Abdul_Kalam_Book_Cover.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Wings of Fire</b></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:50px;font-weight:bold;" name="No of Books Available:" value="5"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Wings of Fire">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Wings of Fire"></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://m.media-amazon.com/images/I/41ndvNbV2dL.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>Dreams from my Father</b><br></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:55px; font-weight:bold;" name="No of Books Available:" value="6"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="Dreams from my Father">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="Dreams from my Father"></button></form>
+            </div>
+            <div class="col">
+                <div class="img-thumbnail bg-secondary">
+                    <img src="https://m.media-amazon.com/images/I/51OLjqa8C4S._SX316_BO1,204,203,200_.jpg" class="img rounded">
+                    <div class="caption">
+                        <p><b>The Story of My Life</b><br></p>
+                    </div>
+                    <form action="addToCart" method="GET">No of books available : <input type="text" style="width:55px; font-weight:bold;" name="No of Books Available:" value="4"><br>
+                </div>
+                <button type="submit" class="btn btn-outline-warning" name="item" value="The Story of My Life">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+                <form action="addToOrders" method="GET"><button type="submit" name="item" value="The Story of My Life"></button></form>
+            </div>
+        </div><br>
+        <form action="cart" method="GET">
+            <center><input type="submit" class="btn btn-outline-secondary" style="width:30%; font-weight:bold; background-color:goldenrod" value="GO TO CART"></center>
+        </form><br><br>
+</body>
+
+</html>
