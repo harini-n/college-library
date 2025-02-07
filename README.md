@@ -1,4 +1,4 @@
 # College-Library
-This website shows the no of copies of a book available in the college library.
+This website shows the number of copies of a book available in the college library.
 
 https://youtu.be/JXwhIJNhGEY
